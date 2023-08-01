@@ -13,7 +13,7 @@
             <!-- Icon Style-->
             <Style x:Key="IconButtonStyle" TargetType="{x:Type Button}">
                 <Setter Property="Background" Value="Transparent"/>
-                <Setter Property="Foreground" Value="White"/>
+                <Setter Property="Foreground" Value="IndianRed"/>
                 <Setter Property="BorderThickness" Value="0"/>
                 <Setter Property="Height" Value="30"/>
                 <Setter Property="Width" Value="30"/>
@@ -22,7 +22,7 @@
                     <Setter.Value>
                         <ControlTemplate TargetType="{x:Type Button}">
                             <Border Background="{TemplateBinding Background}">
-                      
+
                                 <Path
                                     HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
                                     VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
@@ -41,6 +41,28 @@
                 <Setter Property="Width" Value="20"/>
                 <Setter Property="Stretch" Value="Uniform"/>
                 <!-- To-Do :  add animation later-->
+            </Style>
+            <Style x:Key="ToggleIconButtonStyle" TargetType="{x:Type ToggleButton}">
+                <Setter Property="Background" Value="Transparent"/>
+                <Setter Property="Foreground" Value="IndianRed"/>
+                <Setter Property="BorderThickness" Value="0"/>
+                <Setter Property="Height" Value="30"/>
+                <Setter Property="Width" Value="30"/>
+                <Setter Property="Margin" Value="10,0"/>
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="{x:Type ToggleButton}">
+                            <Border Background="{TemplateBinding Background}">
+
+                                <Path
+                                    HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                    VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                                    Data="{TemplateBinding Content}"
+                                    Fill="{TemplateBinding Foreground}"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
             </Style>
         </ResourceDictionary>
     </Application.Resources>
