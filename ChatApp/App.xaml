@@ -7,16 +7,17 @@
         <!--loading icons -->
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="\chatapp\assets\icons.xaml"/>
+                <ResourceDictionary Source="\assets\icons.xaml"/>
             </ResourceDictionary.MergedDictionaries>
             
             <!-- Icon Style-->
             <Style x:Key="IconButtonStyle" TargetType="{x:Type Button}">
                 <Setter Property="Background" Value="Transparent"/>
+                <Setter Property="Foreground" Value="White"/>
                 <Setter Property="BorderThickness" Value="0"/>
-                <Setter Property="Height" Value="50"/>
-                <Setter Property="Width" Value="50"/>
-                <Setter Property="Padding" Value="20"/>
+                <Setter Property="Height" Value="30"/>
+                <Setter Property="Width" Value="30"/>
+                <Setter Property="Padding" Value="10"/>
                 <Setter Property="Template">
                     <Setter.Value>
                         <ControlTemplate TargetType="{x:Type Button}">
@@ -32,6 +33,14 @@
                     </Setter.Value>
                 </Setter>
                 
+            </Style>
+            
+            <!-- Defualt style for path-->
+            <Style TargetType="{x:Type Path}">
+                <Setter Property="Height" Value="20"/>
+                <Setter Property="Width" Value="20"/>
+                <Setter Property="Stretch" Value="Uniform"/>
+                <!-- To-Do :  add animation later-->
             </Style>
         </ResourceDictionary>
     </Application.Resources>

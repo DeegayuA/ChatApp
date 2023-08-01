@@ -32,5 +32,27 @@ namespace ChatApp
                 DragMove();
             }
         }
+
+        private void btnMinimize_Click(object sender, RoutedEventArgs e)
+        {
+           // to minimize the app
+           WindowState = WindowState.Minimized;
+        }
+
+        private void btnMaximize_Click(object sender, RoutedEventArgs e)
+        {
+            //to maximize the app
+            if (WindowState == WindowState.Normal)
+                WindowState = WindowState.Maximized;
+            else
+                WindowState = WindowState.Normal;
+
+        }
+
+        private void btnClose_Click(object sender, RoutedEventArgs e)
+        {
+            //to minimize the app
+            WindowState = WindowState.Minimized;
+        }
     }
 }

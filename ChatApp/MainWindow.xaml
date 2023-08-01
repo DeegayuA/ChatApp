@@ -54,8 +54,16 @@
                         Margin="10,0"
                         Orientation="Horizontal">
                         <Button x:Name="btnMinimize"
-                                VerticalContentAlignment="Bottom"
                                 Content="{StaticResource minimize}"
+                                Click="btnMinimize_Click"
+                                Style="{StaticResource IconButtonStyle}"/>
+                        <Button x:Name="btnMaximize"
+                                Content="{StaticResource maximize}"
+                                Click="btnMaximize_Click"
+                                Style="{StaticResource IconButtonStyle}"/>
+                        <Button x:Name="btnClose"
+                                Content="{StaticResource close}"
+                                Click="btnClose_Click"
                                 Style="{StaticResource IconButtonStyle}"/>
                     </StackPanel>
                 </Grid>
