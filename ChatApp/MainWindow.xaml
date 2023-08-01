@@ -9,11 +9,57 @@
         AllowsTransparency="True"
         Background="Transparent"
         FontSize="15"
-        ResizeMode="NoResize"
-        Title="ChatApp"
+        ResizeMode="CanResize"
+        Title="DANK-Chat"
         Height="768" 
-        Width="1250">
-    <Grid>
-        
-    </Grid>
+        Width="1280"
+        WindowStyle="None"
+        WindowStartupLocation="CenterScreen" >
+    <Border 
+        CornerRadius="20"
+        Background="WhiteSmoke">
+ 
+        <Grid>
+            <!--Structure-->
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <!--Title Bar-->
+            <Border 
+                Background="#322653"
+                CornerRadius="20,20,0,0"
+                Grid.ColumnSpan="3"
+                Height="40"
+               MouseDown="Border_MouseDown">
+                <Grid>
+                    <TextBlock
+                        Text="{Binding Title, 
+                        ElementName=mainWindow}"
+                        HorizontalAlignment="Left"
+                        Margin="15,0"
+                        VerticalAlignment="Center"
+                        Foreground="White"
+                        FontSize="22"
+                        FontWeight="Bold"/>
+                    
+                    <!-- Window Buttons-->
+                    <StackPanel
+                        HorizontalAlignment="Right"
+                        Margin="10,0"
+                        Orientation="Horizontal">
+                        <Button x:Name="btnMinimize"
+                                VerticalContentAlignment="Bottom"
+                                Content="{StaticResource minimize}"
+                                Style="{StaticResource IconButtonStyle}"/>
+                    </StackPanel>
+                </Grid>
+            </Border>
+        </Grid>
+    </Border>
 </Window>
