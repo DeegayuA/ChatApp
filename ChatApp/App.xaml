@@ -7,7 +7,7 @@
         <!--loading icons -->
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="c:\users\deega\documents\chatapp\chatapp\assets\icons.xaml"/>
+                <ResourceDictionary Source="\chatapp\assets\icons.xaml"/>
             </ResourceDictionary.MergedDictionaries>
             
             <!-- Icon Style-->
