@@ -51,7 +51,7 @@
                     <!-- Window Buttons-->
                     <StackPanel
                         HorizontalAlignment="Right"
-                        Margin="10,0"
+                        Margin="20,0"
                         Orientation="Horizontal">
                         <Button x:Name="btnMinimize"
                                 Content="{StaticResource minimize}"
