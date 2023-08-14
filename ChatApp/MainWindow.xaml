@@ -10,9 +10,9 @@
         Background="Transparent"
         FontSize="15"
         ResizeMode="CanResize"
-        Title="DANK-Chat"
-        Height="768" 
-        Width="1280"
+        Title="TalkWave"
+        Height="540" 
+        Width="960"
         WindowStyle="None"
         WindowStartupLocation="CenterScreen" >
     <Border 
