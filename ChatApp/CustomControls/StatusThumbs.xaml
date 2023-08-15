@@ -4,9 +4,8 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:ChatApp.CustomControls"
-             mc:Ignorable="d"
-             
-             >
+             mc:Ignorable="d">
+	
     <UserControl.Resources>
         <DataTemplate x:Key="thumbsTemplate">
             <!-- ellipse -->
@@ -71,7 +70,10 @@
             </Grid>
         </DataTemplate>
     </UserControl.Resources>
-    <ItemsControl ItemTemplate="{StaticResource thumbsTemplate}">
+    <ItemsControl ItemTemplate="{StaticResource thumbsTemplate}" ItemsSource ="{Binding statusThumbsCollection}">
+		<ItemsConntrol.DataContext>
+		    <viewmodels:ViewModel/>
+		</ItemsConntrol.DataContext>
         <ItemsControl.ItemsPanel>
             <ItemsPanelTemplate>
                 <StackPanel Orientation="Horizontal"/>

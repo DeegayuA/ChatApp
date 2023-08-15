@@ -146,7 +146,7 @@
                 <!-- end region -->
                     
                 <!--  region status thumbnails -->
-                    
+                  <customcontrols:StatusThumbs Grid.Row="2"/>  
                 <!-- end region -->
             </Grid>
         </Grid>
